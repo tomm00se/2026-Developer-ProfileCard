@@ -1,17 +1,38 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./styles.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import { Avatar } from "./components/Avatar";
+import { Intro } from "./components/Intro";
+import { SkillList } from "./components/SkillList";
+import { Title } from "./components/Title";
+
+function App() {
+  return (
+    <div className="card">
+      <Avatar imageUrl="./avatar.jpg" alt="Avatar" />
+      <div className="data">
+        <Title title="Tommy Bowden" />
+        <Intro data="26 Year old software engineer from the UK. I love music, pokemon and skateboarding!" />
+        <SkillList
+          skills={[
+            { skill: "Javascript", rating: 3, color: "#845EC2" },
+            { skill: "Typescript", rating: 3, color: "#845EC2" },
+            { skill: "React", rating: 2, color: "#ff9671" },
+            { skill: "C#", rating: 1, color: "#d65db1" },
+            { skill: "React Native", rating: 2, color: "#ff6f91" },
+          ]}
+        />
+      </div>
+    </div>
+  );
+}
+
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
+
 root.render(
-  <React.StrictMode>
+  <StrictMode>
     <App />
-  </React.StrictMode>
+  </StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
