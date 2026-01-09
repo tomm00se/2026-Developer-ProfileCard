@@ -2,12 +2,14 @@ import { useMemo } from "react";
 
 export const Skill = ({ skill, rating, color }) => {
   const ratingIcon = useMemo(() => {
-    if (rating === 3) {
-      return "💪";
+    if (rating === 1) {
+      return "🥇";
     } else if (rating === 2) {
-      return "👍🏼";
+      return "🥈";
+    } else if (rating === 3) {
+      return "🥉";
     } else {
-      return "👶🏼";
+      return "🎖️";
     }
   }, [rating]);
 

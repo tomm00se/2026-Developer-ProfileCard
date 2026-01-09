@@ -1,17 +1,17 @@
 export const skills = [
   {
     skill: "HTML",
-    rating: 3,
+    rating: 1,
     color: "#e34c26",
   },
   {
     skill: "CSS",
-    rating: 2,
+    rating: 1,
     color: "#9169cc",
   },
   {
     skill: "JavaScript",
-    rating: 3,
+    rating: 1,
     color: "#f1e05a",
   },
   {
@@ -21,17 +21,22 @@ export const skills = [
   },
   {
     skill: "React",
-    rating: 3,
+    rating: 1,
     color: "#16c0ef",
   },
   {
     skill: "C#",
-    rating: 1,
+    rating: 3,
     color: "#22cb00",
   },
   {
     skill: "React Native",
-    rating: 1,
+    rating: 3,
     color: "#0092b3",
+  },
+  {
+    skill: "Golang",
+    rating: 0,
+    color: "#00add8",
   },
 ];
