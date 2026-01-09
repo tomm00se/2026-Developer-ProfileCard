@@ -15,7 +15,7 @@ function App() {
       <Avatar imageUrl="./avatar.jpg" alt="Avatar" />
       <div className="data">
         <Title title="Tommy Bowden" />
-        <Intro data="26 Year old software engineer from the UK. I love music, pokemon and skateboarding!" />
+        <Intro data="26 Year old software engineer from the UK. I love music, pokémon and skateboarding!" />
         {/* <SkillList
           skills={[
             { skill: "Javascript", rating: 3, color: "#845EC2" },
