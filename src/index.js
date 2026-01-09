@@ -6,6 +6,8 @@ import { Avatar } from "./components/Avatar";
 import { Intro } from "./components/Intro";
 import { SkillList } from "./components/SkillList";
 import { Title } from "./components/Title";
+import { SkillListV2 } from "./components/SkillListV2";
+import { skills } from "./skills";
 
 function App() {
   return (
@@ -14,7 +16,7 @@ function App() {
       <div className="data">
         <Title title="Tommy Bowden" />
         <Intro data="26 Year old software engineer from the UK. I love music, pokemon and skateboarding!" />
-        <SkillList
+        {/* <SkillList
           skills={[
             { skill: "Javascript", rating: 3, color: "#845EC2" },
             { skill: "Typescript", rating: 3, color: "#845EC2" },
@@ -22,7 +24,8 @@ function App() {
             { skill: "C#", rating: 1, color: "#d65db1" },
             { skill: "React Native", rating: 2, color: "#ff6f91" },
           ]}
-        />
+        /> */}
+        <SkillListV2 skills={skills} />
       </div>
     </div>
   );
