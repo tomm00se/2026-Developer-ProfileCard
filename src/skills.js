@@ -35,8 +35,13 @@ export const skills = [
     color: "#0092b3",
   },
   {
-    skill: "Golang",
+    skill: "Python",
     rating: 0,
-    color: "#00add8",
+    color: "#3572a5",
+  },
+  {
+    skill: "Java",
+    rating: 0,
+    color: "#b07219",
   },
 ];
